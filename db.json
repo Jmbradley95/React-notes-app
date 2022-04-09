@@ -1,0 +1,33 @@
+{
+  "notes": [
+    {
+      "id": 1,
+      "title": "first note set up",
+      "body": "This is a test to set up the second notes on this react app.",
+      "author": "Jonathan Bradley",
+      "created": "2022-03-28"
+    },
+    {
+      "id": 2,
+      "title": "second note set up",
+      "body": "This is a test to set up the second notes on this react app. update note testing again",
+      "author": "Jonathan Bradley",
+      "created": "2022-03-28",
+      "updated": "2022-04-06"
+    },
+    {
+      "title": "Testing add note Feature",
+      "author": "Jonathan Bradley",
+      "body": "ewrwerwer",
+      "created": "2022-04-08",
+      "id": 4
+    },
+    {
+      "title": "Adding another Note for functional",
+      "author": "Jonathan Bradley",
+      "body": "Adding another note",
+      "created": "2022-04-08",
+      "id": 6
+    }
+  ]
+}
