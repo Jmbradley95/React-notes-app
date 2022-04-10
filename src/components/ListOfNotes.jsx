@@ -41,14 +41,14 @@ const NotesList = styled.section`
   position: relative;
   width: min(75%, 600px);
   height: min-content;
-  max-height: 88%;
+  max-height: 85%;
 
   display: flex;
   justify-content: flex-start;
   align-items: space-around;
   flex-direction: column;
 
-  overflow: scroll;
+  overflow-Y: scroll;
   box-shadow: inset 0px -10px 19px -10px var(--dark-grey);
   border-radius: 5px;
 
@@ -109,5 +109,14 @@ const NotesList = styled.section`
 
   li:not(:first-of-type) {
     margin-top: 10px;
+  }
+
+  ::-webkit-scrollbar{
+    width: 20px;
+  }
+
+  ::web-kit-scrollbar-thumb{
+    background: var(--teal);
+    border-radius: 50%:
   }
 `;

@@ -5,13 +5,15 @@ import { useNavigate } from "react-router-dom";
 import { ReactComponent as SubmitButton } from "../assets/plus.svg";
 
 export default function NewNotePage() {
-  const [note, setNote] = useState({});
+  const [title, setTitle] = useState("");
+  const [author, setAuthor] = useState("");
+  const [body, setBody] = useState("");
 
   let navigate = useNavigate();
 
   let handleSubmit = (e) => {
     e.preventDefault();
-    
+    createNote();
   };
 
   let createNote = async (note) => {
@@ -22,6 +24,9 @@ export default function NewNotePage() {
       },
       body: JSON.stringify({
         ...note,
+        title: title,
+        author: author,
+        body: body,
         created: new Date().toISOString().split("T")[0],
       }),
     });
@@ -36,8 +41,9 @@ export default function NewNotePage() {
           <input
             id="title"
             type="text"
+            value={title}
             // onChange={(e) => setTitle(e.target.value)}
-            onChange={(e) => setNote({ ...note, title: e.target.value })}
+            onChange={(e) => setTitle(e.target.value)}
           />
         </div>
 
@@ -46,8 +52,8 @@ export default function NewNotePage() {
           <input
             id="author"
             type="text"
-            // onChange={(e) => setAuthor(e.target.value)}
-            onChange={(e) => setNote({ ...note, author: e.target.value })}
+            value={author}
+            onChange={(e) => setAuthor(e.target.value)}
           />
         </div>
 
@@ -55,8 +61,9 @@ export default function NewNotePage() {
           <label htmlFor="body">Body: </label>
           <textarea
             id="body"
+            value={body}
             // onChange={(e) => setBody(e.target.value)}
-            onChange={(e) => setNote({ ...note, body: e.target.value })}
+            onChange={(e) => setBody(e.target.value)}
           ></textarea>
         </div>
 

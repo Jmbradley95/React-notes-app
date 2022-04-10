@@ -18,16 +18,24 @@
     {
       "title": "Testing add note Feature",
       "author": "Jonathan Bradley",
-      "body": "ewrwerwer",
+      "body": "Testing update feature now",
       "created": "2022-04-08",
-      "id": 4
+      "id": 4,
+      "updated": "2022-04-09"
     },
     {
-      "title": "Adding another Note for functional",
+      "title": "Team Project - Phase 1",
+      "author": "tester",
+      "body": "haha",
+      "created": "2022-04-09",
+      "id": 7
+    },
+    {
+      "title": "Team Project - Phase 2",
       "author": "Jonathan Bradley",
-      "body": "Adding another note",
-      "created": "2022-04-08",
-      "id": 6
+      "body": "tested",
+      "created": "2022-04-09",
+      "id": 8
     }
   ]
 }
